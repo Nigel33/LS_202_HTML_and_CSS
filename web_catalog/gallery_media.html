@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Flex Project</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width", initial-scale=1.0" />
+    <link href="flex.css" rel="stylesheet" />
+    <style>
+    	* {
+    		padding: 0;
+    		margin: 0;
+    	}
+
+    	html {
+    		font-family: Helvetica, arial, sans-serif;
+    		font-size: 16px;
+    		background-color: black;
+    	}
+
+    	body {
+    		color: white;
+    	}
+
+    	header {
+	    	margin: 30px 20px;
+	    	text-align: center;
+	    	width: 100%;
+
+    	}
+
+    	h1 {
+    		font-size: 1 rem;
+
+    	}
+
+    	.container {
+    		max-width: 1000px;
+    		margin: 0 auto;
+    		padding: 10px;
+    		display: block;
+    		box-sizing: border-box;
+    		display: flex;
+    		flex-wrap: wrap;
+    	}
+
+    	figure img {
+    		border: 15px solid white;
+
+    	}
+
+    	img {
+    		width: 100%;
+    		height: auto;
+    		display: block;
+    		box-sizing: border-box;
+    	}
+
+    	figcaption {
+    		padding: 10px 0 0;
+    		display: block;
+    		margin-bottom: 20px;
+    	}
+
+    	.gallery {
+    		display: flex;
+    		justify-content: space-between;
+    		flex-wrap: wrap;
+    	}
+
+    	.gallery li {
+    		list-style: none;
+    		width: 20%;
+    		border: 2px solid white;
+    		margin-bottom: 20px;
+    	}
+
+    	@media screen and (max-width: 899px) {
+    		.gallery li {
+    		width: 30%;
+    		}
+    	}
+
+    	@media screen and (max-width: 599px) {
+    		.gallery li {
+    		width: 45%;
+    		}
+    	}
+
+    	@media screen and (min-width: 1280px) {
+    		.gallery li {
+    			width: 100%;
+    		}
+
+    		.gallery {
+    			width: 20%;
+    			flex-wrap: wrap;
+    			margin-left: 30px;
+    		}
+
+    		figure {
+    			width: 950px;
+    		}
+
+    		.container {
+    			max-width: 100%;
+    		}
+    	}
+
+
+    </style>
+
+  </head>
+
+  <body>
+    <div class="container">
+    	<header>
+      		<h1> My Photo Gallery
+    	</header>
+
+    	<figure>
+    		<img src="http://placehold.it/1200x900" alt="example" title="title">
+    		<figcaption>Main Photo</figcaption>
+    	</figure>
+
+    	<ul class="gallery">
+    		<li><img src="http://placehold.it/1200x900" alt="example" title="title"></li>
+    		<li><img src="http://placehold.it/1200x900" alt="example" title="title"></li>
+    		<li><img src="http://placehold.it/1200x900" alt="example" title="title"></li>
+    		<li><img src="http://placehold.it/1200x900" alt="example" title="title"></li>
+    		<li><img src="http://placehold.it/1200x900" alt="example" title="title"></li>
+    		<li><img src="http://placehold.it/1200x900" alt="example" title="title"></li>
+    		<li><img src="http://placehold.it/1200x900" alt="example" title="title"></li>
+    		<li><img src="http://placehold.it/1200x900" alt="example" title="title"></li>
+    		<li><img src="http://placehold.it/1200x900" alt="example" title="title"></li>
+    		<li><img src="http://placehold.it/1200x900" alt="example" title="title"></li>
+    		<li><img src="http://placehold.it/1200x900" alt="example" title="title"></li>
+    		<li><img src="http://placehold.it/1200x900" alt="example" title="title"></li>
+    	</ul>
+    </div>
+
+
+	</body>
+</html>

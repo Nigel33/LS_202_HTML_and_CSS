@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="style.css" rel="stylesheet" />
+    <title>Todo-App</title>
+
+  </head>
+  <body>
+    <label for="hamburger"></label>
+    <input type="checkbox" name="hamburger" id="hamburger" class="hamburger-icon"/>
+
+  	<header>
+  		<nav>
+        <ul>
+          <li>
+  			    <h2 class="all_todos">All Todos</h2>
+            <p class="circle">18</p>
+          </li>
+          <li class="active">
+            <a href="#">02/16</a>
+            <p class="circle">8</p>
+          </li>
+          <li>
+            <a href="#">03/16</a>
+            <p class="circle">2</p>
+          </li>
+          <li>
+            <a href="#">04/16</a>
+            <p class="circle">1</p>
+          </li>
+          <li>
+            <a href="#">05/16</a>
+            <p class="circle">1</p>
+          </li>
+          <li>
+            <a href="#">06/16</a>
+            <p class="circle">6</p>
+          </li>
+  			</ul>
+
+  			<ul class="completed">
+          <li>
+            <h2>Completed</h2>
+          </li>
+  				<li>
+            <a href="#">02/15</a>
+          </li>
+  				<li>
+            <a href="#">03/15</a>
+          </li>
+  				<li>
+            <a href="#">04/15</a>
+          </li>
+  				<li>
+            <a href="#">05/15</a>
+          </li>
+  				<li>
+            <a href="#">06/14</a>
+          </li>
+  			</ul>
+  		</nav>
+  	</header>
+
+  	<main>
+      <ul>
+        <li>
+          <h2>02/16</h2>
+  			  <p class="current circle">8</p>
+        </li>
+  		</ul>
+
+    	<table>
+        <tr>
+          <th scope="col">
+  	        <img src="assets/plus.png" alt="add" />
+          </th>
+          <th>Add new to do</th>
+          <th></th>
+        </tr>
+
+        <tr>
+        	<th scope="col">
+            <button><img src="assets/unticked-box.png" alt="unticked-box" /></button>
+         	</th>
+          <td class="description">
+            <label>
+              <input type="checkbox" class="edit" name="#" />
+              <p>Item 1</p>
+
+              <form action="#" method="post">
+                <dl>
+                  <dt>
+                    <label for="title">Title</label>
+                  </dt>
+                  <dd>
+                    <input type="text" name=title id="title" value="Item 1" />
+                  </dd>
+                </dl>
+                <dl>
+                  <dt>
+                    <label for="due-date">Due Date</label>
+                  </dt>
+                  <dd class="date"><!--
+               --><select name="date">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                    </select><!--
+                 --><p>/</p><!--
+                 --><select name="month">
+                      <option value="january">January</option>
+                      <option value="february">February</option>
+                      <option value="march">March</option>
+                    </select><!--
+                 --><p>/</p><!--
+                 --><select name="year">
+                      <option value="2018">2018</option>
+                      <option value="2019">2019</option>
+                      <option value="2020">2020</option>
+                    </select><!--
+               --></dd>
+                </dl>
+                <dl>
+                  <dt>Description</dt>
+                  <dd>
+                  <textarea name="#" rows="7" cols="40" placeholder="Description"></textarea>
+                  </dd>
+                </dl>
+                <fieldset>
+                  <input type="submit" value="Save" />
+                  <input type="submit" value="Mark As Complete" />
+                </fieldset>
+              </form>
+
+            </label>
+          </td>
+          <td class="trash"><button><img src="assets/trash.png" alt="trash"></button></td>
+        </tr>
+
+        <tr>
+          <th scope="col">
+            <button><img src="assets/unticked-box.png" alt="unticked-box" /></button>
+          </th>
+          <td class="description">
+            <p>Item 2</p>
+          </td>
+          <td class="trash"><button><img src="assets/trash.png" alt="trash"><button></td>
+        </tr>
+
+        <tr>
+          <th scope="col">
+            <img src="assets/ticked-box.png" alt="ticked-box" />
+          </th>
+          <td class="description completed">
+            <p>Item 3</p>
+          </td>
+          <td class="trash"><button><img src="assets/trash.png" alt="trash"><button></td>
+        </tr>
+
+        <tr>
+          <th scope="col">
+            <button><img src="assets/ticked-box.png" alt="ticked-box" /></button>
+          </th>
+          <td class="description completed">
+            <p>Item 4</p>
+          </td>
+          <td class="trash"><button><img src="assets/trash.png" alt="trash"></button></td>
+        </tr>
+
+        <tr>
+          <th scope="col">
+            <button><img src="assets/ticked-box.png" alt="ticked-box" /></button>
+          </th>
+          <td class="description completed">
+            <p>Item 5</p>
+          </td>
+          <td class="trash"><button><img src="assets/trash.png" alt="trash"></button></td>
+        </tr>
+
+        <tr>
+          <th scope="col">
+            <button><img src="assets/unticked-box.png" alt="ticked-box" /></button>
+          </th>
+          <td class="description">
+            <p>Item 6</p>
+          </td>
+          <td class="trash"><button><img src="assets/trash.png" alt="trash"></button></td>
+        </tr>
+
+        <tr>
+          <th scope="col">
+            <button><img src="assets/unticked-box.png" alt="ticked-box" /></button>
+          </th>
+          <td class="description">
+            <p>Item 7</p>
+          </td>
+          <td class="trash"><button><img src="assets/trash.png" alt="trash"></button></td>
+        </tr>
+        <tr>
+          <th scope="col">
+            <button><img src="assets/unticked-box.png" alt="ticked-box" /></button>
+          </th>
+          <td class="description">
+            <p>Item 8</p>
+          </td>
+          <td class="trash"><button><img src="assets/trash.png" alt="trash"></button></td>
+        </tr>
+
+        <tr>
+          <th scope="col">
+            <button><img src="assets/unticked-box.png" alt="ticked-box" /></button>
+          </th>
+          <td class="description">
+            <p>Item 9</p>
+          </td>
+          <td class="trash"><button><img src="assets/trash.png" alt="trash"></button></td>
+        </tr>
+      </table>
+    </main>
+  </body>
+</html>

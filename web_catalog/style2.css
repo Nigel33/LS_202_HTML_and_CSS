@@ -1,0 +1,61 @@
+@import url("assets/whitespace-reset.css");
+html {
+	font: 18px Helvetica, arial, sans-serif;
+}
+
+body {
+	background-color: #F6E549;
+}
+
+h1 {
+	font-size: 30px;
+	font-weight: bold;
+	color: white;
+	padding: 25px 0 25px 20px;
+}
+
+header, main {
+	width: 80%;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+.products:after {
+    content: "";
+    flex: 1;
+}
+
+header {
+	background-color: #1093BA;
+	border-bottom-right-radius: 12px;
+	border-bottom-left-radius: 12px;
+	margin-bottom: 20px;
+}
+
+main {
+	background-color: #EDEDED;
+	/*padding: 20px 18px;*/
+}
+
+h2 {
+	font-size: 26px;
+	font-weight: bold;
+	padding: 20px 18px;
+}
+
+.products {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.products dl {
+	margin: 0 18px;
+	width: 20%;
+	display: inline-block;
+}
+
+.products img {
+	width: 100%;
+}

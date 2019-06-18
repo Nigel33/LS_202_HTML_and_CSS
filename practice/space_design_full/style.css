@@ -1,0 +1,151 @@
+@import url("assets/whitespace-reset.css");
+
+body {
+	background: url("assets/images/bg_body.gif") transparent;
+	background-color: #2f2840;
+	font: 20px "Nunito", arial, sans-serif;
+}
+
+header, main, footer {
+	width: 1200px;
+	margin: 0 auto;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+header {
+	margin: 135px 0 0 0;
+	padding-bottom: 40px;
+	text-align: center;
+}
+
+main {
+	background-color: white;
+	padding: 115px 85px 20px 85px;
+}
+
+.active {
+	color: #5f9bd7;
+	font-weight: 800;
+}
+
+article {
+	padding: 0 100px;
+}
+
+nav ul {
+	margin-left: 380px;
+	display: flex;
+	padding: 112px 0 0 0;
+}
+
+nav a {
+	text-decoration: none;
+	margin-right: 77px;
+	color: #cacaca;
+	font-size: 26px;
+	display: inline-block;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 36px;
+	font-weight: 700;
+	padding-bottom: 27px;
+}
+
+h2::before, h2::after {
+	font-size: 24px;
+	content: "\2022";
+	padding:  0 25px;
+	vertical-align: 5px;
+}
+
+h3 {
+	font-size: 24px;
+	font-weight: 800px;
+	color: #3e59b2;
+	padding-bottom: 12px;
+}
+
+article {
+	padding: 0 100px 65px 100px;
+}
+
+.padding {
+	padding-bottom: 35px;
+}
+
+.padding_2 {
+	padding-bottom: 25px;
+}
+
+.padding h3 {
+	font-weight: 800;
+}
+
+footer {
+	background-color: #e7e7e7;
+	color: #b2b2b2;
+	padding: 85px 345px 75px 345px;
+}
+
+footer ul{
+	padding-top: 30px;
+	text-indent: -9999px;
+	display: flex;
+}
+
+footer a {
+	display: block;
+	width: 46px;
+	height: 46px;
+	text-indent: -9999px;
+	background: url("assets/images/icons_social-media.png") 0 0 no-repeat;
+	padding: 0 60px;
+}
+
+.twitter {
+	position: 0 0;
+}
+
+.facebook {
+	background-position: 0 -46px;
+}
+
+.email {
+	background-position: 0 -92px;
+}
+
+.instagram {
+	background-position: 0 -138px;
+}
+
+figure img {
+	display: inline-block;
+}
+
+figure {
+	padding-bottom: 45px;
+}
+
+ul.team {
+	display: flex;
+	justify-content: center;
+}
+
+.team li {
+	margin: 125px 35px 215px 35px;
+}
+
+.team p {
+	text-decoration: none;
+	color: #3e59b2;
+	display: block;
+	padding-top: 20px;
+}
+
+section {
+	padding: 0 130px;
+}
+

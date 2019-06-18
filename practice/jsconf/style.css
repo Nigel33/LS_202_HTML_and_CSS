@@ -1,0 +1,385 @@
+@import url("assets/whitespace-reset.css");
+
+body {
+	font: 16px "Open Sans", arial, sans-serif;
+}
+
+/*___________________________________________________________________________*/
+
+nav {
+	width: 100%;
+	border-top: 0.55rem solid #F5F5F5;
+	position: fixed;
+	background-color: white;
+	z-index: 1;
+	top: 0;
+}
+
+nav ul {
+	text-align: center;
+	max-width: 960px;
+	margin: 0 auto;
+	border-bottom: 1px solid #eee;
+}
+
+nav li {
+	display: inline-block;
+	padding: 12px 25px;
+}
+
+nav a {
+	color: black;
+	font-size: 13px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+header {
+	padding-top: 56px;
+	height: 430px;
+	width: 100%;
+	background: transparent url("assets/logo_background.jpg") no-repeat;
+	text-align: center;
+}
+
+header img {
+	padding-top: 150px 
+}
+
+header h1, header h2 {
+	color: white;
+}
+
+header h1 {
+	font-size: 72px;
+}
+
+header h2, footer h2{
+	text-transform: uppercase;
+	font-size: 31px;
+	padding-bottom: 48px;
+}
+
+.tickets {
+	text-align: center
+}
+
+h3 {
+	text-align: center;
+	font-size: 48px;
+	color: #444444;
+	padding-bottom: 40px;
+}
+
+.tickets h3 {
+	padding: 56px 0 30px 0;
+	font-weight: normal;
+	text-align: center;
+	color: #444444;
+}
+
+.speakers h3 {
+	padding-top: 128px;
+	text-align: center;
+	font-size: 48px;
+	color: #444444;
+	padding-bottom: 40px;
+}
+
+h4 {
+	color: #008000;
+	font-size: 26px;
+	font-weight: bold;
+	padding: 15px 0 10px;
+}
+
+
+
+button {
+	margin-top: 10px;
+	margin: 10px auto 0;
+	width: auto;
+	padding: 10px 30px;
+	background-color: #008000;
+	color: white;
+	font-weight: 700;
+	cursor: pointer;
+	text-align: center;
+	font-size: 16px;
+}
+
+.button:focus, .button:hover {
+	background-color: #006000;
+}
+
+.papers {
+	margin: 0;
+	text-align: center;
+	position: relative;
+	top: -6px;
+}
+
+.speakers {
+	margin-bottom: 135px;
+}
+
+
+.speakers ul {
+	margin: 0 auto;
+	width: 905px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.speakers li {
+	text-align: center;
+	width: 31%;
+	box-sizing: border-box;
+	height: 380px;
+	position: relative;
+}
+
+.speakers li:hover .overlay{
+	opacity: 1;
+}
+
+.speakers li:nth-child(even) {
+	margin: 0 1.5% 1.5%;
+}
+
+.speakers img {
+	width: 100%;
+	padding-bottom: 25px;
+
+}
+
+p a:hover, p a:focus ,a:hover, a:focus, h4:hover, h4:focus {
+	text-decoration: underline;
+}
+
+.overlay{
+	font-size: 13px;
+	text-align: center;
+	opacity: 0;
+	position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  color: white;
+  vertical-align: -50px;
+}
+
+.overlay p{
+	padding: 5px 15px 15px;
+}
+
+.overlay a, .team a {
+	color: #008000;
+	text-decoration: none;
+}
+
+.schedule, .call_for_papers {
+	margin: 0 30px 150px;
+}
+
+[scope="col"] {
+	padding: 15px 15px;
+}
+
+[scope="row"] {
+	padding: 15px 20px;
+}
+
+[scope="img"] {
+	vertical-align: top;
+}
+
+table {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+td {
+	border-top: 1px solid #eee;
+	border-bottom 1px solid #eee;
+	font-size: 24px;
+}
+
+table img {
+	width: 130px;
+	height: auto;
+	display: block;
+	padding: 12px 0;
+}
+
+table a{
+	display: block;
+	color: #444444;
+	font-size: 18px;
+	font-weight: 600;
+	padding-top: 20px;
+	text-decoration: none;
+}
+
+.call_for_papers p {
+	line-height: 25px;
+	font-weight: 300;
+	margin-bottom: 15px;
+	position: relative;
+}
+
+footer {
+	background: transparent url("assets/people.jpg") 0 0 no-repeat;
+	height: 340px;
+}
+
+footer h1 {
+	color: white;
+	font-size: 48px;
+	font-weight: 100;
+	text-align: center;
+	padding: 40px 0;
+}
+
+footer h2 {
+	padding: 20px 0 10px 0;
+}
+
+.team {
+	
+	height: 180px;
+	background-color: rgba(0, 0, 0, 0.8);
+	color: white;
+	padding-left: 160px;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+.team p {
+	padding-bottom: 10px;
+}
+
+.float {
+	width: 140px;
+	float: left;
+}
+
+.sponsors {
+	width: 900px;
+	margin: 0 auto;
+	padding-bottom: 50px;
+}
+
+.sponsors h5 {
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.platinum, .gold, .silver, .support {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 25px;
+}
+
+.platinum li, .silver li{
+	width: 33%;
+}
+
+.gold li  {
+	width: 40%;
+}
+
+.support li {
+	width: 22%;
+}
+
+.support img {
+	width: 100%;
+}
+
+.sponsors li:nth-child(even) {
+	margin: 0 0.5% 0;
+}
+
+@media screen and (max-width: 976px) {
+	.speakers li {
+		width: 48%;
+	}
+
+	.speakers ul {
+		width: 600px;
+	}
+}
+
+@media screen and (max-width: 660px) {
+	tr {
+		position: relative;
+		display: block;
+	}
+
+	[scope="img"] {
+		display: block;
+		position: absolute;
+		top: 5px;
+	}
+
+	[scope="img"] img {
+		width: 80px;
+		height: auto;
+	}
+
+	[scope="col"] {
+		display: block;
+		text-align: right;
+		padding: 20px;		
+	}
+
+	[scope="row"] {
+		display: block;
+		padding: 15px 0;
+	}
+}	
+
+@media screen and (max-width: 650px) {
+	nav {
+		display: none;
+	}
+
+	header {
+		padding-top: 0;
+		height: 300px;
+	}
+
+	header img {
+	padding-top: 90px;
+}
+
+	header h1 {
+	font-size: 48px;
+}
+
+	header h2 {
+		font-size: 20px;
+		padding-bottom: 43px;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.speakers ul {
+		width: 325px;
+	}
+
+	.speakers li {
+		width: 90%;
+	}
+}
+
+
+
+
+
+
+
